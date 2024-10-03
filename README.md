@@ -14,7 +14,7 @@ Contact Information: Visitors can connect with me via email or social media.
 - **Click on Project Links:** Each project in the portfolio has a link to a live demo or GitHub repository.
 - **Get in Touch:** Use the contact form or links to social media to reach out to me.
 ## Project Links
-<a href="https://rehman-portfolio.blogspot.com/">Live Demo</a>
+<a href="https://rehman-portfolio.blogspot.com/">Live Demo</a> <br>
 <a href="https://github.com/M-Rehmans/Personal_Portfolio">GitHub Repository</a>
 
 ## Contact Information
