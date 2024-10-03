@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	  <link rel="stylesheet" href="https://drive.google.com/uc?id=1risdTydu5Sy3mbOJhH3eYaCc2G91uuX_">
+    <script src="https://kit.fontawesome.com/10aba48a55.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr2zw0rQ5AuuvzR7CEdYPt6IXVsUMiy3q-3pP1cGI4UjwWId4ptGMCKagIHWMYSb5groVJLvdG4DIMEfCjpG1rCCJ9dM3vBws1CnBKBFRA8HgD_5H2BIF1J5kEr41leioTQxqnIXHnRH_t0krEekSUT4oJuStym1wPgYzENu-vq6IrPM-K-glwCidKb3U/s1801/Rehman.png." type="image/x-icon">
+    <title>About Me</title>
+  <style>
+/* google fonts links */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* google fonts */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --primary-color: #D3E97A;
+    --Neutral-halfwhite: #C7C7C7;
+    --Light-black: #222222;
+    --first-color: Black;
+    --font-colo: white;
+}
+body {
+    background-color: var(--first-color);
+    color: white;
+}
+    header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 5px 5px var(--Light-black);
+}
+
+nav ul {
+    background-color: var(--first-color);
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    padding: 5px 40px;
+    width: 100%;
+    gap: 30px;
+}
+
+li>a {
+    color: var(--font-colo);
+}
+
+/* .logo-img {
+    width: 150px;
+} */
+
+.logo {
+    flex: 1;
+    padding: 8px 0px;
+    color: white;
+}
+.logo-span{
+    font-size: 25px;
+    color: var(--primary-color);
+}
+.toggle-icon {
+    display: none;
+}
+.list-items {
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.active {
+    color: var(--primary-color);
+} 
+.list-items>a {
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Required for pseudo-element */
+    text-decoration-skip-ink: auto; /* Prevent underline from overlapping glyphs */
+    padding-bottom: 2px; 
+}
+
+.list-items>a::after {
+    content: ''; /* Required for pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Initially hidden */
+    height: 2px; /* Adjust as needed */
+    background-color: var(--primary-color); /* Use the desired color */
+    transition: width 0.3s ease; /* Add transition for width */
+}
+
+.list-items>a:hover::after {
+    width: 100%; /* Show underline on hover */
+}
+
+    
+    
+    
+    
+.About-US, .Contact-US{
+    padding: 80px;   
+    width: 100%;
+    overflow: hidden;
+}
+.Details{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 10px;
+}
+.About-title, .capabilities-title, .contact-descrip>:first-child{
+    font-size: 48px;
+}
+
+.About-Descrip>:nth-child(2){
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.About-Descrip>:nth-child(3){
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+.About-Descrip>:nth-child(3):hover{
+    color: var(--primary-color);
+    text-decoration-color: white;
+}
+.Image-about{
+    background-color: #D3E97A;
+    margin: 50px auto;
+    max-width: 75vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.Aboutimg{
+    width: 280px;
+    padding-top: 10px;
+}
+
+.buttons-area{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+}
+
+.btn{
+    padding: 9px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    font-weight: bold;
+}
+.buttons-area a{
+    color: black;
+}
+.social-btn{
+    background-color: var(--Light-black);
+    border: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+}
+.Facebook-btn{
+    padding: 8px 12px;
+}
+.social-btn i{
+    color: var(--primary-color);
+}
+.capabilities, .Contact-US{
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    gap: 10px;
+}
+.capabilities-details>:first-child{
+    margin-bottom: 15px;
+}
+.Skills-capsules{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.skills-capsules{
+    width: 80px;
+    text-transform: uppercase;
+}
+.javascript-btn{
+    width: 110px;
+    background-color: #D3E97A;
+}
+@keyframes changeText {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+.Contact-US{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    grid-template-rows: 1fr 0.5fr 0.4fr;
+}
+.contact-descrip>:nth-child(2), .contact-descrip>:nth-child(3){
+    font-size: 15px;
+    padding: 10px 0px;
+    color: var(--Neutral-halfwhite);
+}
+.contact-descrip>:nth-child(2) a, .contact-descrip>:nth-child(3) a{
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 2px;
+}
+.form-box{
+    grid-area: 1/2/4/3;
+    /* align-self: center; */
+    max-width: 600px;
+}
+.copyrights-tag{
+    grid-area: 3/1/4/2;
+    align-self: self-end;
+    font-size: 14px;
+    color: var(--Neutral-halfwhite);
+}
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type=text], input[type=email], textarea {
+    outline: none;
+    padding: 10px;
+    background-color: var(--Light-black);
+    color: white;
+    border: none;
+}
+label{
+    color: var(--Neutral-halfwhite);
+}
+.submit-btn{
+    margin-top: 5px;
+    width: 110px;
+}
+.submit-btn>a{
+    color: black;
+
+}
+    
+
+@media screen and (max-width: 1180px){
+    .About-US, .Contact-US{
+        /* padding: 50px ; */
+        /* background-color: aliceblue; */
+        overflow: hidden;
+    }
+    .Details, .capabilities{
+        grid-template-columns: 1fr;
+    }
+
+    .buttons-area{
+        margin-top: 15px;
+    }
+    .Aboutimg{
+        width: 250px;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .About-US{
+        padding: 40px ;
+        
+    }
+    .Aboutimg{
+        width: 220px;
+    }
+    .Contact-US{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 1fr 0.3fr;
+        gap: 7px;
+    }
+    .form-box{
+        grid-area: 2/1/3/4;
+        align-self: center;
+        max-width: 600px;
+    }
+    .copyrights-tag{
+        grid-area: 3/1/4/4;
+        align-self: self-end;
+    }
+}
+  </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+
+                <li class="logo"><a href="#home"><span class="logo-span">Rehman.</span>portfolio</a></li>
+                <li class="navbar-logo toggle-icon">
+                    <i class="fa fa-bars"></i>
+                </li>
+                <li class="navbar-links list-items"><a href="https://rehman-portfolio.blogspot.com/#home">Home</a></li>
+                <li class="navbar-links list-items"><a href="https://rehman-portfolio.blogspot.com/#Projects">Projects</a></li>
+                <li class="navbar-links list-items"><a href="https://rehman-portfolio.blogspot.com/#About-Us">About Us</a></li>
+                <li class="navbar-links list-items"><a href="https://rehman-portfolio.blogspot.com/#Contact-US">Contact US</a></li>
+            </ul>
+        </nav>
+    </header>
+     <section class="About-US" id="About-Us">
+        <div class="Details">
+            <div class="About-title">
+                <p>About ME</p>
+            </div>
+            <div class="About-Descrip">
+
+                <p>I am looking for a Front-end Internship in the Tech Industry to apply my web development skills
+                    effectively and gain valuable industry experience.</p>
+                <p>I am in my 8th semester pursuing a Bachelor's degree in Information Technology, driven to secure a
+                    Front-end Internship in the dynamic Tech Industry. I am eager to apply and elevate my web
+                    development
+                    skills, aiming to contribute meaningfully while gaining crucial industry insights and experiences.
+                    Constantly expanding my knowledge through online resources like YouTube and focusing on mastering
+                    JavaScript, I am ready to make a significant contribution to your team.</p>
+                <div class="buttons-area">
+                    <button class="btn"><a href="">Download Resume</a></button>
+                    <button class="social-btn"><a href="https://www.linkedin.com/in/muhammad-rehman-rafi-944418257/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+                    <button class="social-btn"><a href="https://github.com/M-Rehmans"><i class="fa-brands fa-github"></i></a></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="Image-about">
+            <img alt="" class="Aboutimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht5FjJnN61-deOvPHPXf4nSCL_OuRixCui_CJYtKqY5ypJF3XkRTDru2CREn5LCtgPedqeEsoF6pTsS8LEhKC7NTvzRaATql1lvfpIuo0wz7GCNVNZYYDti4C8g6wkT9JPtbDF84B62a9MbA7HcvSdS7zRtlHO64UrD_GNRL4N1pdabqUPhaVJLbGPanU/s2913/Rehman's%20Portfolio%20ABout-page.png" />
+        </div>
+        <div class="capabilities">
+            <p class="capabilities-title">
+                My Capabilities
+            </p>
+            <div class="capabilities-details">
+                <p>
+                    I am always looking to add more skills. I am currently focused on mastering JavaScript and its
+                    associated frameworks, diving deep into the world of dynamic and interactive web development.
+                </p>
+                <div class="Skills-capsules">
+                    <button class="btn skills-capsules">HTML</button>
+                    <button class="btn skills-capsules">css</button>
+                    <button class="btn  javascript-btn" id="skillsBtn">JavaScript</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section class="Contact-US" id="Contact-US">
+        <div class="contact-descrip">
+            <p>Let's Connect</p>
+            <p>Say hello at <span class="hello-mail"><a href="">mrehmanrafi15@gmail.com</a></span></p>
+            <p>For more info here's my <span class="Resume"><a href="">resume</a></span></p>
+            <div class="buttons-area">
+                <button class="social-btn"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></button>
+                <button class="social-btn"><a href=""><i class="fa-brands fa-github"></i></a></button>
+                <button class="social-btn Facebook-btn"><a href=""><i class="fa-brands fa-facebook-f"></i></a></button>
+            </div>
+        </div>
+        <div class="form-box">
+            <form action="" class="form-inputs">
+                <label for="name">Name</label>
+                <input id="name" name="" type="text" />
+                <label for="Email">Email</label>
+                <input id="" name="Email" type="email" />
+                <label for="Subject">Subject</label>
+                <input id="" name="Subject" type="text" />
+                <label for="Message">Message</label>
+                <textarea cols="30" form="usrform" name="comment" rows="3"></textarea>
+                <button class="btn submit-btn"><a href="">Submit</a></button>
+            </form>
+
+        </div>
+        <div class="copyrights-tag">© 2024 Muhammad Rehman Rafi</div>
+    </section>
+
+
+</body>
+
+<script>
+   // For javascript button text change 
+        const btn = document.getElementById('skillsBtn');
+  let index = 0;
+  const texts = ['JavaScript', 'Learning...']; // Texts to cycle through
+  const colors = ['', 'white']; // Background colors corresponding to texts
+
+  setInterval(() => {
+    index = (index + 1) % texts.length; // Cycle through the array
+    btn.textContent = texts[index]; // Set button text
+    btn.style.backgroundColor = colors[index]; // Set button background color
+    btn.style.animation = 'changeText 1s ease-in-out'; // Apply the text change animation
+  }, 800); // Change text every 2 seconds (2000 milliseconds)
+</script>
+
+</html>
